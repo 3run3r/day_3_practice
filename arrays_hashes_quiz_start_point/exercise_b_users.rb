@@ -99,4 +99,16 @@ users["Erik"][:home_town] = "Edinburgh"
 p users["Erik"][:home_town]
 
 # 9. Add a pet dog to Erik called "Fluffy"
+
+users["Erik"][:pets].push(
+  {:name => "Fluffy",
+   :species => "dog"
+  }
+)
+p users["Erik"][:pets][4]
+
 # 10. Add another person to the users hash
+
+users["Matteo"] = {}
+
+p users
